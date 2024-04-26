@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>FeedBack Form</title>
+</head>
+<body>
+<h1>Please fill Out the Form</h1>
+<form action="/addFeedBack" method="post" th:object="${feedBack}">
+    <label for="name">Name:
+        <input type="text" name="name" id="name">
+    </label>
+    <br><br>
+    <label for="bookName">Book Name:
+        <input type="text" name="bookName" id="bookName">
+    </label>
+    <br><br>
+    <label for="response">Feedback:
+        <input type="textarea" cols="50" rows="50" name="response" id="response">
+    </label>
+    <br><br>
+
+    <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>
